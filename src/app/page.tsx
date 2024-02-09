@@ -1,7 +1,13 @@
+import About from "./components/About";
+import SideBar from "./components/SideBar";
+
 export default function Home() {
   return (
-    <>
-      <h1 className="bg-red-500">Hello</h1>
-    </>
+    <main className="w-full h-screen bg-red-500 flex">
+      <SideBar />
+      <div className="w-full ">
+        <About />
+      </div>
+    </main>
   );
 }
