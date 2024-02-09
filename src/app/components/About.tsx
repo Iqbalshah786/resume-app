@@ -1,9 +1,10 @@
 "use client";
+import Experience from "./Experience";
 import Skills from "./Skills";
 
 export default function About() {
   return (
-    <div className="bg-green-500 md:px-12">
+    <div className=" md:px-12">
       <div className="aboutMe flex flex-col mt-12 px-8 py-4 gap-8">
         <div className="heading">
           <h1 className=" font-bold">About</h1>
@@ -23,6 +24,7 @@ export default function About() {
           </p>
         </div>
         <Skills />
+        <Experience />
       </div>
     </div>
   );
