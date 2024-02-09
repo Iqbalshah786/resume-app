@@ -1,3 +1,6 @@
+"use client";
+import Skills from "./Skills";
+
 export default function About() {
   return (
     <div className="bg-green-500 md:px-12">
@@ -14,11 +17,12 @@ export default function About() {
             of my ultimate goal, even when facing challenges.
           </p>
           <p>
-            When I'm not working, I love hiking, reading, and spending time with
-            my friends and family. I believe that my determination, can-do
+            When not working, I love hiking, reading, and spending time with my
+            friends and family. I believe that my determination, can-do
             attitude, and hard work make me a true asset to any team.
           </p>
         </div>
+        <Skills />
       </div>
     </div>
   );
