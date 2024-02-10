@@ -18,7 +18,7 @@ export default function SideBar({}) {
               className="rounded-full"
             />
             <div>
-              <h1 className="my-4">John Doe</h1>
+              <h1 className="my-4 text-[#fff734]">John Doe</h1>
               <h2>Software Engineer</h2>
             </div>
           </div>

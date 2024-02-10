@@ -9,16 +9,16 @@ export default function Skills() {
     <div className="w-full">
       <div className="skillType mb-4">
         <button
-          className={`w-1/2 text-left p-4 hover:bg-black hover:text-yellow-400 ${
-            selectedSkill === false ? "bg-yellow-200" : "bg-gray-200"
+          className={`w-1/2 text-left p-4 hover:bg-[#191a19] hover:text-[#fff734] ${
+            selectedSkill === false ? "bg-[#fff734]" : "bg-gray-200"
           }`}
           onClick={() => setSelectedSkill(false)}
         >
           soft skill
         </button>
         <button
-          className={` w-1/2 text-right p-4 hover:bg-black hover:text-yellow-400  ${
-            selectedSkill === true ? "bg-yellow-200" : "bg-gray-200"
+          className={` w-1/2 text-right p-4 hover:bg-[#191a19] hover:text-[#fff734]  ${
+            selectedSkill === true ? "bg-[#fff734]" : "bg-gray-200"
           }`}
           onClick={() => setSelectedSkill(true)}
         >
