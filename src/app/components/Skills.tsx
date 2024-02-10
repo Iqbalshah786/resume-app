@@ -1,4 +1,3 @@
-"use client";
 import { useState } from "react";
 import SkillSet from "./SkillSet";
 import { skills } from "../../../data/data";

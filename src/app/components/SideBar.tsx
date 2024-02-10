@@ -7,11 +7,9 @@ import { useState } from "react";
 export default function SideBar() {
   return (
     <>
-      <aside
-        className={`w-full bg-red-400   md:w-[50vw] flex-col items-center justify-center `}
-      >
-        <div className="w-full h-auto bg-blue-500 flex flex-col  items-center justify-center">
-          <div className="name text-center flex flex-col gap-4">
+      <aside className={`w-full h-full bg-red-400 py-16`}>
+        <div className="w-full h-auto  flex flex-col  items-center gap-4  justify-center">
+          <div className="name text-center flex flex-col gap-4 mt-12">
             <Image
               src={profile}
               alt="profile picture"
@@ -19,17 +17,25 @@ export default function SideBar() {
               height={300}
               className="rounded-full"
             />
-            <div className="">
-              <h1>John Doe</h1>
-              <h2>Position</h2>
+            <div>
+              <h1 className="my-4">John Doe</h1>
+              <h2>Software Engineer</h2>
             </div>
           </div>
 
-          <div className="education">
-            <p>Bachelors</p>
-            <p>Masters</p>
+          <div className="education px-8 ">
+            <p className="my-4">
+              Bachelor of Science in Computer Science, University of
+              Oxford(2015-2019)
+            </p>
+            <p>
+              Master of Science in Artificial Intelligence, Imperial College
+              London (2019-2021)
+            </p>
           </div>
-          <Contact />
+          <div className="contact mt-8">
+            <Contact />
+          </div>
         </div>
       </aside>
     </>
