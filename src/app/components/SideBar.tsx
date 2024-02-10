@@ -2,15 +2,14 @@
 import profile from "../../../public/images/db.jpeg";
 import Image from "next/image";
 import Contact from "./Contact";
-import { Menu } from "lucide-react";
+import { useState } from "react";
 
 export default function SideBar() {
   return (
     <>
-      <div className="menu z-1 absolute top-4 left-4 md:hidden">
-        <Menu />
-      </div>
-      <aside className="hidden relative w-[50vw] md:flex flex-col items-center justify-center">
+      <aside
+        className={`w-full bg-red-400   md:w-[50vw] flex-col items-center justify-center `}
+      >
         <div className="w-full h-auto bg-blue-500 flex flex-col  items-center justify-center">
           <div className="name text-center flex flex-col gap-4">
             <Image
