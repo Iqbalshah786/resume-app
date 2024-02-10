@@ -3,11 +3,11 @@ import profile from "../../../public/images/db.jpeg";
 import Image from "next/image";
 import Contact from "./Contact";
 import { useState } from "react";
-
-export default function SideBar() {
+import { contacts } from "../../../data/data";
+export default function SideBar({}) {
   return (
     <>
-      <aside className={`w-full h-full bg-red-400 py-16`}>
+      <aside className={`w-full h-full  py-16 text-white`}>
         <div className="w-full h-auto  flex flex-col  items-center gap-4  justify-center">
           <div className="name text-center flex flex-col gap-4 mt-12">
             <Image
@@ -34,7 +34,7 @@ export default function SideBar() {
             </p>
           </div>
           <div className="contact mt-8">
-            <Contact />
+            <Contact contacts={contacts} />
           </div>
         </div>
       </aside>

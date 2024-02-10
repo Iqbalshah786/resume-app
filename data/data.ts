@@ -1,3 +1,6 @@
+import { github, linkedin, mail, twitter } from "./Icons";
+
+
 export const skills = {
 	soft: [
 		{ icon: "👂🏼", text: "Active Listening" },
@@ -38,5 +41,24 @@ export const experiences = [
 	end_year:2021,
 	objective:"Designed and implemented advanced machine learning algorithms to improve predictive accuracy and performance. Built and maintained scalable machine learning infrastructure using cloud computing platforms. Conducted data exploratory analysis to identify potential use cases and opportunities. Participated in regular code reviews to maintain high quality standards."
 	},
+
+]
+export const contacts = [
+	{
+		name:"mail",
+		icon:mail,
+	},
+	{
+		name:'Twitter',
+		icon:twitter
+	},
+	{
+		name:'Linkedin',
+		icon:linkedin,
+	},
+	{
+		name:'Github',
+		icon:github,
+	}
 
 ]

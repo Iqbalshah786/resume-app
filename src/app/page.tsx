@@ -4,7 +4,7 @@ import SideBar from "./components/SideBar";
 export default function Home() {
   return (
     <main className="w-full h-screen flex">
-      <div className="md:w-[50vw] ">
+      <div className="md:w-[50vw] bg-[#191a19]">
         <SideBar />
       </div>
       <div className="w-full  overflow-y-auto">
