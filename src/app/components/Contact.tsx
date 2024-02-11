@@ -13,15 +13,13 @@ export default function Contact({ contacts }: Props) {
       <h1 className="uppercase mb-4 text-xl">contact me</h1>
       <div className="flex gap-6">
         {contacts.map((contact) => (
-          <>
-            <Image
-              src={contact.icon}
-              alt={contact.name}
-              width={30}
-              height={30}
-              key={contact.name}
-            />
-          </>
+          <Image
+            src={contact.icon}
+            alt={contact.name}
+            width={30}
+            height={30}
+            key={contact.name}
+          />
         ))}
       </div>
     </div>
