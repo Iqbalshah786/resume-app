@@ -3,6 +3,7 @@ import Link from "next/link";
 interface contactTypes {
   name: string;
   icon: any;
+  link: string;
 }
 interface Props {
   contacts: contactTypes[];
