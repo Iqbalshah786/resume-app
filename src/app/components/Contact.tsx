@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 interface contactTypes {
   name: string;
   icon: any;
@@ -20,6 +19,7 @@ export default function Contact({ contacts }: Props) {
               alt={contact.name}
               width={30}
               height={30}
+              key={contact.name}
             />
           </>
         ))}
