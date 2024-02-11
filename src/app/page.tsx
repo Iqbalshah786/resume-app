@@ -36,7 +36,7 @@ export default function Home() {
         </div>
         <SideBar />
       </div>
-      <div className=" w-full  md:overflow-y-auto">
+      <div className={` w-full  md:overflow-y-auto ${isOpen && "hidden"}`}>
         <About />
       </div>
     </main>

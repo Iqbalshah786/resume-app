@@ -1,4 +1,4 @@
-import { github, linkedin, mail, twitter } from "./Icons";
+import { github, linkedin, mail } from "./Icons";
 
 
 export const skills = {
@@ -47,18 +47,18 @@ export const contacts = [
 	{
 		name:"mail",
 		icon:mail,
-	},
-	{
-		name:'Twitter',
-		icon:twitter
+		link:"mailto:emailto:iqbalshahnadiri786@gmail.com",
 	},
 	{
 		name:'Linkedin',
 		icon:linkedin,
+		link:"https://www.linkedin.com/in/iqbalshah-nadiri/"
 	},
 	{
 		name:'Github',
 		icon:github,
+		link:"https://github.com/Iqbalshah786"
 	}
 
 ]
+
