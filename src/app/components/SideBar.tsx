@@ -1,25 +1,25 @@
-"use client";
 import profile from "../../../public/images/db.jpeg";
 import Image from "next/image";
 import Contact from "./Contact";
-import { useState } from "react";
 import { contacts } from "../../../data/data";
 export default function SideBar({}) {
   return (
     <>
-      <aside className={`w-full h-full  py-16 text-white`}>
+      <aside
+        className={`w-full h-full  py-16 text-white md:px-4 flex flex-col items-center justify-center`}
+      >
         <div className="w-full h-auto  flex flex-col  items-center gap-4  justify-center">
-          <div className="name text-center flex flex-col gap-4 mt-12">
+          <div className="name text-center flex flex-col justify-center items-center gap-4 mt-12">
             <Image
               src={profile}
               alt="profile picture"
-              width={300}
-              height={300}
-              className="rounded-full"
+              className="rounded-full w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] flex-shrink-0"
             />
             <div>
-              <h1 className="my-4 text-[#fff734] text-[56px]">John Doe</h1>
-              <h2 className=" text-2xl">Software Engineer</h2>
+              <h1 className="my-4 text-[#fff734] md:text-[40px] lg:text-[56px] ">
+                John Doe
+              </h1>
+              <h2 className="md:text-xl lg:text-2xl">Software Engineer</h2>
             </div>
           </div>
 
@@ -33,7 +33,7 @@ export default function SideBar({}) {
               London (2019-2021)
             </p>
           </div>
-          <div className="contact mt-8">
+          <div className="contact mt-8 md:mt-20  ">
             <Contact contacts={contacts} />
           </div>
         </div>

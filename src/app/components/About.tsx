@@ -4,7 +4,7 @@ import Skills from "./Skills";
 
 export default function About() {
   return (
-    <div className=" md:px-12">
+    <div className=" md:px-8">
       <div className="aboutMe flex flex-col mt-12 px-8 py-4 gap-8">
         <div className="heading">
           <h1 className=" font-bold">About</h1>

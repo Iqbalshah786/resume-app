@@ -11,7 +11,7 @@ interface Props {
 export default function Contact({ contacts }: Props) {
   return (
     <div className="flex flex-col items-center justify-center gap-2">
-      <h1 className="uppercase">contact me</h1>
+      <h1 className="uppercase mb-4 text-xl">contact me</h1>
       <div className="flex gap-6">
         {contacts.map((contact) => (
           <>
