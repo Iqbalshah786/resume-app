@@ -14,6 +14,8 @@ export default function SideBar({}) {
               src={profile}
               alt="profile picture"
               className="rounded-full w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] flex-shrink-0"
+              priority={true}
+              placeholder="blur"
             />
             <div>
               <h1 className="my-4 text-[#fff734] md:text-[40px] lg:text-[56px] ">
